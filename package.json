@@ -1,0 +1,14 @@
+{
+  "name": "nowh",
+  "version": "1.0.0",
+  "description": "Hola como estas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
