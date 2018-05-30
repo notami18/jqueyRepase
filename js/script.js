@@ -38,13 +38,13 @@ function MyFunction(data) {
       '<div class="card-body">'+
         '<h3 class="card-title">Hola como estas?</h3>'+
         '<dl class="dl-horizontal">'+
-          '<dt>ID</dt>'+
+          '<dt class="form-group">ID</dt>'+
           '<dd>'+attr.Id+'</dd>'+
-          '<dt>Nombre</dt>'+
+          '<dt class="form-group">Nombre</dt>'+
           '<dd>'+attr.Name+'</dd>'+
-          '<dt>Apellido</dt>'+
+          '<dt class="form-group">Apellido</dt>'+
           '<dd>'+attr.Apellido+'</dd>'+
-          '<dt>Edad</dt>'+
+          '<dt class="form-group">Edad</dt>'+
           '<dd>'+attr.Edad+'</dd>'+
         '</dl>'+
       '</div>'+
