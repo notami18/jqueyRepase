@@ -1,3 +1,11 @@
-h1{
+h1 {
     background-color: aqua;
+}
+
+.dl-horizontal dt {
+    text-align: left;
+}
+
+.dl-horizontal dd {
+    margin-left: 160px;
 }
