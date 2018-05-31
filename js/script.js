@@ -53,30 +53,63 @@ function MyFunction(data) {
         console.log(attr);
     });
 
-    /*var i;
-    for (i = 0; i < data.length; i++) {
-        $("#Hola").append('<div class="card-header" id="headingOne">'+
-        '<h5 class="mb-0">'+
-        '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse'+data[i].Id+'" aria-expanded="true" aria-controls="collapse'+data[i].Id+'">'+
-          '00'+data[i].Id+''+
-          '</button>'+
-        '</h5>'+
-      '</div>'+
-      '<div id="collapse'+data[i].Id+'" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">'+
-      '<div class="card-body">'+
-        '<h3 class="card-title">Hola como estas?</h3>'+
-        '<dl class="table-hover">'+
-          '<dt>ID</dt>'+
-          '<dd id="'+data[i].Id+'"></dd>'+
-          '<dt>Nombre</dt>'+
-          '<dd id="'+data[i].Name+'"></dd>'+
-          '<dt>Apellido</dt>'+
-          '<dd id="'+data[i].Apellido+'"></dd>'+
-          '<dt>Edad</dt>'+
-          '<dd id="'+ data[i].Edad+'"></dd>'+
-        '</dl>'+
-      '</div>'+
-    '</div>');
-    }*/
+    /*var vehicleSelect = $("#table1").DataTable({
+        columns: [
+          { data: "select", title: "" },
+          { data: "placa", title: "Placa" },
+          { data: "descripcionMarca", title: "Marca" },
+          { data: "descripcionReferencia", title: "Referencia" }
+        ],
+        columnDefs: [
+          { orderable: true, targets: [1, 2, 3] },
+          {
+            targets: [1],
+            render: function (data, type, row, meta) {
+              var nombre = data;
+
+              if (nombre == null || nombre == undefined) {
+                nombre = "";
+              }
+
+              return nombre;
+            }
+          },
+          {
+            orderable: false,
+            className: 'select-checkbox',
+            targets: 0
+          }
+        ],
+        select: {
+            style:    'os',
+            selector: 'td:first-child'
+        },
+        iDisplayLength: 10,
+        order: [[0, "desc"]],
+        autoWidth: false,
+        language: {
+          url: "https://cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+        },
+        data: vehicleForDriver
+      });
+
+  vehicleSelect.on("click", "th.select-checkbox", function() {
+        if ($("th.select-checkbox").hasClass("selected")) {
+            example.rows().deselect();
+            $("th.select-checkbox").removeClass("selected");
+        } else {
+            example.rows().select();
+            $("th.select-checkbox").addClass("selected");
+        }
+    }).on("select deselect", function() {
+        ("Some selection or deselection going on")
+        if (example.rows({
+                selected: true
+            }).count() !== example.rows().count()) {
+            $("th.select-checkbox").removeClass("selected");
+        } else {
+            $("th.select-checkbox").addClass("selected");
+        }
+    });*/
     
 }
